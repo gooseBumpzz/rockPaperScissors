@@ -6,13 +6,12 @@ function getComputerChoice() {
     //console.log(arr[(Math.floor(Math.random() * arr.length))].toLowerCase());
     return choice;
 }
-
-
+// playing one round of game
 function oneRoundGame (playerSelection, computerSelection){
     playerSelection =  prompt("What do you choose: rock, paper or scissors?").toLowerCase();
-    console.log(playerSelection);
+    // console.log(playerSelection);
     computerSelection = getComputerChoice();
-    console.log(computerSelection);
+    // console.log(computerSelection);
     if (playerSelection === "rock" && computerSelection==="scissors"){
         return("You win! Rock beats Scissors");
     }
@@ -47,10 +46,6 @@ function oneRoundGame (playerSelection, computerSelection){
 
 let playerSelection =  "rock";
 let computerSelection = getComputerChoice();
-
-//console.log(oneRoundGame (playerSelection, computerSelection));
-
-
 
 function game (){
     let playerWins = 0;
